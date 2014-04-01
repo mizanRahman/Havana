@@ -1,5 +1,5 @@
 class RolifyCreateRoles < ActiveRecord::Migration
-  def change
+  def up
     create_table(:roles) do |t|
       t.string :name
       t.references :resource, :polymorphic => true
